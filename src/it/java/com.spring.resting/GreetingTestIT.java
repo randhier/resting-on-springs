@@ -1,3 +1,5 @@
+package com.spring.resting;
+
 import junit.framework.TestCase;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
