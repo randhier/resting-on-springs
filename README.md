@@ -17,3 +17,6 @@ mvn clean install -Dmaven.test.skip=true
  ```sh
 mvn spring-boot:run
 ```
+
+## App URL
+curl http://localhost:8080/greetings

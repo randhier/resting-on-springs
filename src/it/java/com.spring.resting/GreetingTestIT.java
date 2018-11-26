@@ -7,10 +7,10 @@ import static org.hamcrest.Matchers.*;
 public class GreetingTestIT extends TestCase {
 
     public void testGreetingDefault(){
-        get("/greetings").then().body("content", equalTo("Hello, World!"));
+        get("/greetings").then().statusCode(200).body("content", equalTo("Hello, World!"));
     }
 
     public void testGreetingCustom(){
-        get("/greetings?name=Randhier").then().body("content", equalTo("Hello, Randhier!"));
+        get("/greetings?name=Randhier").then().statusCode(200).body("content", equalTo("Hello, Randhier!"));
     }
 }
