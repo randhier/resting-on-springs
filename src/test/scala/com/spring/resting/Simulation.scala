@@ -3,7 +3,7 @@ import io.gatling.core.structure.ScenarioBuilder
 import io.gatling.http.Predef._
 import io.gatling.http.protocol.HttpProtocolBuilder
 
-class BlazeMeterGatlingTest extends Simulation {
+class Simulation extends Simulation {
   private val baseUrl = "http://localhost:8080/"
   private val contentType = "application/json"
   private val endpoint = "greetings"
