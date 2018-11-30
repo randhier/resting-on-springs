@@ -18,5 +18,13 @@ mvn clean install -Dmaven.test.skip=true
 mvn spring-boot:run
 ```
 
+## Run gatling performance tests
+ ```sh
+ mvn gatling:test
+ ```
+
 ## App URL
-curl http://localhost:8080/greetings
+(Default port 8080)
+http://localhost:8080/greetings
+
+docker run --rm -it -p 8080:8080 resting:latest
