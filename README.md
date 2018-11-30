@@ -14,8 +14,13 @@ mvn clean install -Dmaven.test.skip=true
  mvn verify
 ```
 ## Start app
+#### Via spring boot plugin
  ```sh
 mvn spring-boot:run
+```
+### Via Java jar
+```sh
+java jar /resting-on-springs/target/resting-on-springs-1.0.jar
 ```
 
 ## Run gatling performance tests
@@ -23,8 +28,11 @@ mvn spring-boot:run
  mvn gatling:test
  ```
 
-## App URL
-(Default port 8080)
-http://localhost:8080/greetings
+## Endpoints
+GET http://localhost:8080/greetings
 
+## Docker ##
+##### Build Image
+docker build -t resting:latest -f docker/Dockerfile .
+##### Run Image
 docker run --rm -it -p 8080:8080 resting:latest
