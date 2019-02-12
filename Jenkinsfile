@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Launch Second Job') {
             steps {
-                echo ${env.SECOND}
+                echo "${env.SECOND}"
                 script {
                     echo $env.SECOND
                     echo $SECOND
