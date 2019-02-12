@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Launch Second Job') {
             steps {
-                echo "Start Build"
+                build job: 'api-build-s3-pipeline'
             }
         }
         stage('Test') {
