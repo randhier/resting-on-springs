@@ -7,7 +7,7 @@ pipeline {
         stage('Check if Second job can launch'){
             steps {
                 echo "Second: ${params.second}"
-                env.second == true
+                params.second == true
             }
         }
         stage('Launch Second Job') {
