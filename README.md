@@ -1,5 +1,5 @@
 ## Resting on Springs ##
-Project using spring boot to build an RESTful API
+Project  using spring boot to build an RESTful API
 
 ## Installation
 ```

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Launch Second Job') {
             steps {
-                build job: 'api-build-s3-pipeline'
+                build job: 'second'
             }
         }
         stage('Test') {
