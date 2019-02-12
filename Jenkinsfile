@@ -1,18 +1,19 @@
 pipeline {
     agent any
-    parameters {
-        booleanParam(defaultValue: false, description: '', name: 'second')
+    environment {
+        SECOND = 'true'
     }
     stages {
         stage('Check if Second job can launch'){
             steps {
-                echo "Second: ${params.second}"
-//                params.second == true
+                echo "Second: ${env.SECOND}"
+                env.SECOND == true
+                echo "Second: ${env.SECOND}"
             }
         }
 //        stage('Launch Second Job') {
 //            when {
-//                expression { return params.second }
+//                expression {  }
 //            }
 //            steps {
 //                build job: 'second'
